@@ -68,24 +68,24 @@ const toggleItem = (item) =>{
 }
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
+// const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
+// function scrollActive(){
+//     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id')
+//     sections.forEach(current =>{
+//         const sectionHeight = current.offsetHeight,
+//               sectionTop = current.offsetTop - 58,
+//               sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
+//         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+//         }else{
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+//         }
+//     })
+// }
+// window.addEventListener('scroll', scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/ 
 function scrollUp(){
@@ -116,14 +116,12 @@ if (selectedTheme) {
 }
 
 // Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+// themeButton.addEventListener('click', () => {    
+//     document.body.classList.toggle(darkTheme)
+//     themeButton.classList.toggle(iconTheme)
+//     localStorage.setItem('selected-theme', getCurrentTheme())
+//     localStorage.setItem('selected-icon', getCurrentIcon())
+// })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
@@ -144,34 +142,16 @@ sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 
 
 const shareBtn = document.getElementById('shareBtn')
 
-shareBtn.addEventListener('click', event => {
-
-  // Check for Web Share api support
-  if (navigator.share) {
-    // Browser supports native share api
-    navigator.share({
-      text: 'Please read this great article: ',
-      url: 'https://www.google.com/'
-    }).then(() => {
-      console.log('Thanks for sharing!');
-    })
-      .catch((err) => console.error(err));
-  } else {
-    // Fallback
-    alert("The current browser does not support the share function. Please, manually share the link")
-  }
-});
-
 
 // carousel
 
 
-var counter = 1;
-setInterval(function(){
-  document.getElementById('radio' + counter).checked = true;
-  counter++;
-  if(counter > 4){
-    counter = 1;
-  }
-}, 2500);
+// var counter = 1;
+// setInterval(function(){
+//   document.getElementById('radio' + counter).checked = true;
+//   counter++;
+//   if(counter > 4){
+//     counter = 1;
+//   }
+// }, 2500);
 
