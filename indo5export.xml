@@ -3,25 +3,7 @@
    <url>
       <loc>https://indo5export.com/</loc>
       <lastmod>2023-06-15</lastmod>
-      <changefreq>weekly</changefreq>
+      <changefreq>daily</changefreq>
       <priority>1.0</priority>
-   </url>
-   <url>
-      <loc>https://indo5export.com/#products</loc>
-      <lastmod>2023-06-15</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-   </url>
-   <url>
-      <loc>https://indo5export.com/#faqs</loc>
-      <lastmod>2023-06-05</lastmod>
-      <changefreq>yearly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://indo5export.com/#contact</loc>
-      <lastmod>2023-06-05</lastmod>
-      <changefreq>yearly</changefreq>
-      <priority>0.7</priority>
    </url>
 </urlset>
