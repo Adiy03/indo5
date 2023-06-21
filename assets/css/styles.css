@@ -104,9 +104,9 @@ h3 {
   font-weight: var(--font-semi-bold);
 }
 
-ul {
+/* ul {
   list-style: none;
-}
+} */
 
 a {
   text-decoration: none;
@@ -277,6 +277,7 @@ the website, in dark theme
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  list-style: none;
 }
 
 .nav__link {
@@ -1533,3 +1534,6 @@ table td{
   margin-top: 10rem;
 }
 
+.marUl{
+  margin-left: 1rem;
+}
