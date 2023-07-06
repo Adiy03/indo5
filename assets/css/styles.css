@@ -324,7 +324,7 @@ the website, in dark theme
 .home {
   padding: 3.5rem 0 2rem;
   /* background-color: aliceblue; */
-  background-image: url(https://www.jict.co.id/assets/img/headline/headline-img-3.jpg);
+  background-image: url(assets/img/tanjung-priok.jpg);
   background-size: cover;
   min-height: 60vh;
   display: flex;
