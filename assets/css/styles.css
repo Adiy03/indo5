@@ -324,7 +324,7 @@ the website, in dark theme
 .home {
   padding: 3.5rem 0 2rem;
   /* background-color: aliceblue; */
-  background-image: url(assets/img/tanjung-priok.jpg);
+  /* background-image: url(tanjung-priok.jpg); */
   background-size: cover;
   min-height: 60vh;
   display: flex;
