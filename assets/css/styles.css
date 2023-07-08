@@ -493,6 +493,7 @@ the website, in dark theme
   justify-content: center;
   align-items: center;
   border-radius: 12px;
+  /* border-radius: 30%; */
 }
 
 .about__img2 {
@@ -512,6 +513,7 @@ the website, in dark theme
 .about__description {
   margin-bottom: var(--mb-2);
   text-align: justify;
+  margin-right: 2rem;
 }
 
 .about__details {
@@ -1603,9 +1605,9 @@ table td {
 .content {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: justify;
   gap: 1.5rem;
-  margin: 0 2rem;
+  margin: 0 5rem;
   font-weight: 400;
 }
 
@@ -1635,6 +1637,7 @@ table td {
     align-items: flex-start;
     margin-top: 1rem;
     height: auto;
+    margin: 0;
   }
 
   .content {
