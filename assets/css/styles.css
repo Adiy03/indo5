@@ -1460,6 +1460,7 @@ thead tr {
 thead th {
   color: #FFF;
   font-size: 1.15em;
+  justify-content: left;
 }
 
 tbody tr:nth-child(even) {
@@ -1744,4 +1745,9 @@ button {
 
 .wa{
   font-size: 24px;
+}
+
+.hsCode{
+  text-align: center;
+display: inline-block;
 }

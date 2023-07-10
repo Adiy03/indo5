@@ -1,0 +1,28 @@
+[
+    {
+      "productName": "Clove / Clove Oil",
+      "hsCode": "090700 / 330129",
+      "url": "path/to/cloves.html"
+    },
+    {
+      "productName": "Coconut Palm Sugar",
+      "hsCode": "170290",
+      "url": "path/to/coconut-sugar.html"
+    },
+    {
+      "productName": "Sugarcane",
+      "hsCode": "121293",
+      "url": "products/buy-sugar-cane-in-bulk.html"
+    },
+    {
+      "productName": "Tapioca Starch / Tapioca Flour",
+      "hsCode": "190300",
+      "url": "path/to/tapioca.html"
+    },
+    {
+      "productName": "Yellowfin Tuna / Skipjack / Minced Tuna / Negitoro",
+      "hsCode": "030342 / 030343 / 160420",
+      "url": "path/to/yellow-fin-tuna.html"
+    }
+  ]
+  
