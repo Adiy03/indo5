@@ -1584,7 +1584,8 @@ table td {
 .number {
   text-align: center;
   display: inline-block;
-  margin: 0 5px
+  margin: 0 5px;
+  width: 100px;
 }
 
 .product-container {
@@ -1644,6 +1645,9 @@ table td {
   .content {
     flex-direction: column;
     text-align: left;
+    margin: 0;
+    text-align: justify;
+    margin-right: 1rem;
   }
 }
 
