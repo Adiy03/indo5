@@ -105,7 +105,8 @@ h3{
   color: var(--title-color);
 }
 
-h2{
+h2,
+h3{
   text-shadow: 2px 2px 2px #bbb;
   font-weight: 400;
 }
