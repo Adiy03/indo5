@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    padding: 0 5px;
     /* box-sizing: border-box; */
 }
 body{
@@ -42,7 +43,7 @@ select{
     border: none;
 }
 input{
-    width: 95%;
+    width: 75%;
     height: 40px;
     font-size: 1em;
     margin: 0.2em 0;

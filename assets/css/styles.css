@@ -176,7 +176,9 @@ the website, in dark theme
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 5rem 0 1rem;
+  /* padding: 5rem 0 1rem; */
+  padding: 2rem 0 1rem;
+
   /* min-height: 100vh; */
 }
 
@@ -1090,7 +1092,7 @@ the website, in dark theme
   }
 
   .section {
-    padding: 4rem 0 1rem;
+    padding: 2rem 0 1rem;
   }
 
   .section__title,
@@ -1155,7 +1157,7 @@ the website, in dark theme
   }
 
   .questions__title {
-    text-align: initial;
+    text-align: center;
   }
 
   .questions__group {
