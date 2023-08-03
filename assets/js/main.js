@@ -109,11 +109,10 @@ const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dar
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
 
 // We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
-}
+// if (selectedTheme) {
+//   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+//   themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+// }
 
 // Activate / deactivate the theme manually with the button
 // themeButton.addEventListener('click', () => {    
@@ -132,7 +131,7 @@ const sr = ScrollReveal({
     // reset: true
 })
 
-sr.reveal(`.home__data, .content`)
+sr.reveal(`.bawah, .content`)
 sr.reveal(`.home__img`, {delay: 500})
 sr.reveal(`.home__social`, {delay: 600})
 sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
