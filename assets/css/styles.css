@@ -187,6 +187,11 @@ the website, in dark theme
   line-height: 140%;
 }
 
+.title__center{
+  display: flex;
+  text-align: center;
+}
+
 .section__title-center {
   text-align: center;
 }
