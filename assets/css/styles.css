@@ -1891,3 +1891,59 @@ iframe {
 .about__data{
   margin-bottom: 0;
 }
+
+.container-article{
+  width: 100%;
+  min-height: 80vh;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 90px;
+}
+
+.card-article:hover{
+  cursor: pointer;
+}
+
+.content-article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-article .card-article{
+  flex: 1;
+  margin: 20px 20px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.img-article{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  /* overflow: hidden; */
+}
+
+.content-article .card-article h2 {
+  margin: 15px 0px;
+  font-size: 28px;
+  /* color: #1662a1; */
+}
+
+.content-article .card-article p{
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .container-article{
+    height: auto;
+  }
+  .content-article{
+    flex-direction: column;
+  }
+}
