@@ -55,6 +55,10 @@ body .container {
   cursor: pointer;
 }
 
+.card:hover .card-title{
+  color: teal;
+}
+
 /* .card:hover{
   transform: scale(1.1);
 } */
