@@ -53,6 +53,8 @@ body .container {
 
 .card{
   cursor: pointer;
+  text-align: center;
+  align-items: center;
 }
 
 .card:hover .card-title{
