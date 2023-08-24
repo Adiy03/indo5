@@ -1966,3 +1966,10 @@ iframe {
 .see-also-title:hover{
   color: blue;
 }
+
+.tengah{
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  color: var(--first-color);
+}
