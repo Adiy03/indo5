@@ -1973,3 +1973,7 @@ iframe {
   text-decoration: underline;
   color: var(--first-color);
 }
+
+.tengah:hover{
+  color: blue;
+}
