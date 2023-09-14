@@ -9,12 +9,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" />
   <script src="../assets/js/products.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const filterInput = document.getElementById("filter");
+    const products = document.querySelectorAll(".card");
+
+    filterInput.addEventListener("input", function () {
+        const filterText = filterInput.value.toLowerCase();
+
+        products.forEach(function (product) {
+            const productTitle = product.querySelector(".card-body").textContent.toLowerCase();
+            if (productTitle.includes(filterText)) {
+                product.style.display = "block";
+            } else {
+                product.style.display = "none";
+            }
+        });
+    });
+});
+
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <div class="container">
     <!-- Images Filter Buttons Section -->
-    <div class="row mt-5" id="filter-buttons">
+    <br><br>
+    <div class="filter-container">
+      <!-- <label for="filter">Filter Products:</label> -->
+      <i class="fa fa-search"></i><input type="text" id="filter" placeholder="Search Product Name Here">
+    </div>
+
+    <!-- <div class="row mt-5" id="filter-buttons">
       <div class="col-12">
         <button class="btn mb-2 me-1 active" data-filter="all">All Products</button>
         <button class="btn mb-2 mx-1" data-filter="Agriculture">Agriculture</button>
@@ -24,11 +51,8 @@
         <button class="btn mb-2 mx-1" data-filter="Seafood">Sea Food</button>
         <button class="btn mb-2 mx-1" data-filter="Spices">Spices & Herbs</button>
         <button class="btn mb-2 mx-1" data-filter="Others">Others</button> <br>
-        <!-- <a href="#" style="font-size: 16px;" >
-          "Can't find what you're looking for? Contact us instead."
-        </a> -->
       </div>
-    </div>
+    </div> -->
 
     <!-- Filterable Images / Cards Section -->
     <div class="row px-2 mt-5 gap-2" id="filterable-cards">

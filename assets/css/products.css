@@ -81,3 +81,23 @@ img{
   text-decoration: none;
   color: inherit;
 }
+
+.filter-container{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+
+::placeholder {
+  text-align: center;
+}
+
+.fa{
+  margin-right: 10px;
+  font-size:24px;
+}
+
