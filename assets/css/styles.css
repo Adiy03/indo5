@@ -1949,7 +1949,7 @@ iframe {
 }
 
 .see-also{
-  min-height: 30vh;
+  /* min-height: 30vh; */
   width: 100%;
   margin: 0;
   display: flex;
