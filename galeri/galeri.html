@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./galeri.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Galeri Foto</h1>
+    <div class="container"> <br>
+        <!-- <h1>Gallery</h1> -->
         <div class="img-container">
-            <div class="image"><img src="../img-product/andaliman-pepper.jpeg" alt=""></div>
-            <div class="image"><img src="../img-product/andaliman-pepper.jpeg" alt=""></div>
+            <div class="image"><img src="../assets/img-product/andaliman-pepper.jpeg" alt=""></div>
+            <div class="image"><img src="../img-product/avocado.jpg" alt=""></div>
             <div class="image"><img src="../img-product/andaliman-pepper.jpeg" alt=""></div>
             <div class="image"><img src="../img-product/andaliman-pepper.jpeg" alt=""></div>
             <div class="image"><img src="../img-product/andaliman-pepper.jpeg" alt=""></div>
@@ -22,5 +22,18 @@
             <img src="../img-product/andaliman-pepper.jpeg" alt="">
         </div>
     </div>
+
+    <script>
+        document.querySelectorAll('.img-container img').forEach(image =>{
+            image.onclick = () => {
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
 </body>
 </html>

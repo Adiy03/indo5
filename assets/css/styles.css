@@ -659,7 +659,7 @@ the website, in dark theme
 
 .questions__container {
   gap: 1.5rem;
-  padding: 1.5rem 0;
+  /* padding: 1.5rem 0; */
 }
 
 .questions__group {
@@ -1786,7 +1786,7 @@ display: inline-block;
 #iframeContainer {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   justify-content: center;
   align-items: center;
   /* overflow: hidden; */
@@ -1982,3 +1982,4 @@ iframe {
   background-color: teal;
   padding: 5px;
 }
+

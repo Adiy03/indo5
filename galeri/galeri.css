@@ -5,8 +5,8 @@
 
 .container{
     position: relative;
-    min-height: 100vh;
-    background: #ddd;
+    /* min-height: 90vh; */
+    background: #fff;
 }
 
 .container h1{
@@ -58,7 +58,7 @@
 
 .container .popup-image span{
     position: absolute;
-    top: 0; right: 10px;
+    top: 0; right: 10px; top: 10px;
     font-size: 60px;
     font-weight: bolder;
     color: #fff;
@@ -72,7 +72,8 @@
     transform: translate(-50%, -50%);
     border: 5px solid #fff;
     border-radius: 5px;
-    width: 650px;
+    width: 600px;
+    height: 400px;
     object-fit: cover;
 }
 
