@@ -1786,7 +1786,7 @@ display: inline-block;
 #iframeContainer {
   position: relative;
   width: 100vw;
-  height: 80vh;
+  min-height: 80vh;
   justify-content: center;
   align-items: center;
   /* overflow: hidden; */
@@ -1795,7 +1795,7 @@ display: inline-block;
 #iframeContainer-2 {
   position: relative;
   width: 100vw;
-  height: 40vh;
+  height: 65vh;
   justify-content: center;
   align-items: center;
   /* overflow: hidden; */
