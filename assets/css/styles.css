@@ -2054,3 +2054,32 @@ iframe {
     width: 100%;
   }
 }
+
+
+/* Style untuk grid gambar */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Style untuk setiap item di dalam grid */
+.grid-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk gambar dalam item */
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Efek hover pada gambar */
+.grid-item:hover img {
+  /* transform: scale(1.05); */
+  cursor: pointer;
+}
