@@ -1347,11 +1347,11 @@ the website, in dark theme
   width: 400px;
 }
 
-.slide img {
-  /* width: 800px;
-  height: 500px; */
-  /* object-fit: cover; */
-}
+/* .slide img {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+} */
 
 /*css for manual slide navigation*/
 
