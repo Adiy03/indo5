@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect index.html to the root domain
+RewriteRule ^index\.html$ https://indo5export.com/ [L,R=301]
