@@ -2092,3 +2092,112 @@ iframe {
   /* transform: scale(1.05); */
   cursor: pointer;
 }
+
+.product3{
+  width: 100%;
+  height: 100%;
+  background: rgb(240, 239, 243);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  /* justify-content: center; */
+}
+
+.container-product2{
+  width: 375px;
+  height: 370px;
+  background: #FFF;
+  border-radius: 15px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+  padding: 0 20px 20px 20px;
+  overflow-y: scroll;
+  margin-bottom: 30px;
+}
+
+.container-product2::-webkit-scrollbar{
+  display: none;
+}
+
+.container-product2 form{
+  width: 100%;
+  border: 1px solid rgb(82, 74, 235);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-product2 form input{
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  /* padding: 8px 10px; */
+}
+
+.container-product2 form i{
+  padding-left: 15px;
+}
+
+.product4{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+  /* width: 100%;
+  padding-left: 5px; */
+}
+
+.product4 img{
+  max-width: 70px;
+  max-height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product4 .p-details h2{
+  font-size: 16px;
+  width: 100%;
+  /* color: #1d1d1d;
+  font-weight: 300; */
+}
+
+.product4 .p-details{
+  padding-left: 15px;
+}
+
+/* .product4:hover{
+  background-color: brown;
+} */
+
+.product-list{
+  padding: 20px 0;
+}
+
+.product4:hover{
+  color: teal;
+}
+
+.container-product2 .sticky-input{
+  box-sizing: border-box;
+  position: sticky;
+}
+
+.sticky-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0; /* Tetapkan posisi yang sesuai (top, right, bottom, atau left) */
+  background-color: #FFF; /* Warna latar belakang opsional */
+  border: 1px solid #ddd; /* Garis bingkai opsional */
+  z-index: 3; /* Tetapkan indeks z agar input tetap di atas konten lain */
+}

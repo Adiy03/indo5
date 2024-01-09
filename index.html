@@ -7,7 +7,8 @@
   <link rel="canonical" href="https://indo5export.com" />
   <!--=============== title ===============-->
   <title>Indo5export - Indonesia Wholesale Trade</title>
-  <meta name="description" content="Indo5export is an online wholesale export trading that offers a convenient solution for businesses to find and export products from Indonesia">
+  <meta name="description"
+    content="Indo5export is an online wholesale export trading that offers a convenient solution for businesses to find and export products from Indonesia">
   <!--=============== FAVICON ===============-->
   <link rel="icon" href="./assets/img/indo5export.png" type="image/x-icon">
   <link rel="shortcut icon" href="./assets/img/indo5export.png" type="image/x-icon">
@@ -39,6 +40,25 @@
   </script>
   <!--=============== Schema.org ===============-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterInput = document.getElementById("search-item");
+      const products = document.querySelectorAll(".product4");
+
+      filterInput.addEventListener("input", function () {
+        const filterText = filterInput.value.toLowerCase();
+
+        products.forEach(function (product) {
+          const productTitle = product.querySelector(".p-details").textContent.toLowerCase();
+          if (productTitle.includes(filterText)) {
+            product.style.display = "flex";
+          } else {
+            product.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -59,17 +79,17 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
 
-      
+
             <li class="nav__item">
               <a href="#about" class="nav__link">
                 <span>About</span>
               </a>
-            </li>            
-            <li class="nav__item">
+            </li>
+            <!-- <li class="nav__item">
               <a href="https://indo5export.com/wholesale/products.html" target="_blankS" class="nav__link">
                 <span>Products</span>
               </a>
-            </li>      
+            </li> -->
             <li class="nav__item">
               <a href="#faqs" class="nav__link">
                 <span>FAQ</span>
@@ -100,25 +120,655 @@
     <!--==================== HOME ====================-->
     <section>
       <div class="home-container">
-        <h1 class="bawah"> Your Trusted Exporter <br> for Indonesian <br> Bulk (Wholesale) <span class="products">Products</span><br>
-        <button class="button button--flex" type="submit">
+        <h1 class="bawah"> Your Trusted Exporter <br> for Indonesian <br> Bulk (Wholesale) <span
+            class="products">Products</span><br>
+          <!-- <button class="button button--flex" type="submit">
           <i class="ri-whatsapp-line contact__icon"></i>
           <a href="https://wa.me/6285155032886?text=Hi Indo5export, I want to ask questions and get more information about your services and products!">Contact Us Now</a></a>
           <i class="ri-arrow-right-up-line button__icon"></i>
-        </button>
-        <span id="products"></span>
+        </button> -->
+          <span id="products"></span>
       </div>
     </section>
 
-    <section>
-      <div id="iframeContainer-2" class="kiri">
-        <iframe src="https://indo5export.com/wholesale/products.html" class="iframe"></iframe>
+    <section class="product3">
+      <form action="" class="sticky-input">
+        <i class="fas fa-search"></i>
+        <input type="text" name="" id="search-item" placeholder="search item" onkeyup="search()">
+      </form>
+      <div class="container-product2">
+        <div class="product-list">
+          <a href="https://indo5export.com/wholesale/andaliman-sichuan-pickly-ash-pepper.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/andaliman-pepper.jpeg" loading="lazy">
+              <div class="p-details">
+                Andaliman Szechuan <br> Pepper
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/betel-nut-for-sale.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/betelnut.jpeg" loading="lazy">
+              <div class="p-details">
+                Areca Betel Nut <br> HS Code: 0802Xd
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/avocado.html" loading="lazy">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/avocad0-2.jpg" alt="indo5export" loading="lazy">
+              <div class="p-details">
+                Avocados <br> HS Code: 080440
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/banana-leaves-wholesale.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/banleaves.jpeg" loading="lazy">
+              <div class="p-details">
+                Banana Leaves <br> HS Code: 140490
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/bay-leaves.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/salamkoja.jpeg" loading="lazy">
+              <div class="p-details">
+                Bay leaves <br> HS Code: 09109910
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/swallow-nests-saliva.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/swalnest.jpeg" loading="lazy">
+              <div class="p-details">
+                Bird's Nests <br> HS Code: 04109010
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/cabbage.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/cabbage.jpeg" loading="lazy">
+              <div class="p-details">
+                Cabbages <br> HS Code: 070490
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/cardamom.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/cardamom-green.jpeg" loading="lazy">
+              <div class="p-details">
+                Cardamoms <br> HS Code: 09083100
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/carrot-fresh-frozen.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/carrot-2.jpg" loading="lazy">
+              <div class="p-details">
+                Carrots <br> HS Code: 071080
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/cashew-nuts.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/cashewbulk.jpeg" loading="lazy">
+              <div class="p-details">
+                Cashew Nuts <br> HS Code: 080131
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/cassava-chips.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/caschipsbulk.jpg" loading="lazy">
+              <div class="p-details">
+                Cassava Chips <br> HS Code: 110620
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/banana-cavendish.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/banana-cavendish.jpg" loading="lazy">
+              <div class="p-details">
+                Banana Cavendish<br> HS Code: 08039020
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/cayenne-pepper.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/cayenne2.jpeg" loading="lazy">
+              <div class="p-details">
+                Cayenne Pepper <br> HS Code: 07096010
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/chicken-meat-frozen.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/chicken-meat-new.jpg" loading="lazy">
+              <div class="p-details">
+                Chicken Meat <br> HS Code: 020712
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/cinnamon.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/cinnamon.jpeg" loading="lazy">
+              <div class="p-details">
+                Cinnamon <br> HS Code: 090620
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/cloves-stem-ground-oil.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/cengkeh.jpeg" loading="lazy">
+              <div class="p-details">
+                Cloves <br> HS Code: 0907
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/coconut-sugar.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/Coconut-Sugar.jpg" loading="lazy">
+              <div class="p-details">
+                Coconut Sugar <br> HS Code: 17029051
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/cocopeat.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/copeat.jpeg" loading="lazy">
+              <div class="p-details">
+                Cocopeat <br> HS Code: 530500
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/coffe-beans-indonesia.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/coffenew.jpeg" loading="lazy">
+              <div class="p-details">
+                Coffe Beans <br> HS Code: 090111
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/coir.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/coir3.jpg" loading="lazy">
+              <div class="p-details">
+                Coconut Fiber <br> HS Code: 530500
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/coriander.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/ketumbar.jpeg" loading="lazy">
+              <div class="p-details">
+                Coriander Seeds <br> HS Code: 0909
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/corn-kernels.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/maize.jpeg" loading="lazy">
+              <div class="p-details">
+                Corn Maize <br> HS Code: 1005
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/corn-oil-refined.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/corn-oil-new.jpeg" loading="lazy">
+              <div class="p-details">
+                Corn Maize Oil <br> HS Code: 151529
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/crude-coconut-oil.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/crude-coil.jpeg" loading="lazy">
+              <div class="p-details">
+                Cocopeat <br> HS Code: 530500
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/crude-palm-oil.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/cpo2.jpeg" loading="lazy">
+              <div class="p-details">
+                Crude Palm Oil <br> HS Code: 151110
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/rubber-granules-and-powder.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/crumrubber.jpeg" loading="lazy">
+              <div class="p-details">
+                Crumb RUbber <br> HS Code: 400400
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/cuttlefish-frozen-and-cuttlefish-fillet.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/cuttlenew.png" loading="lazy">
+              <div class="p-details">
+                Cuttle Fish <br> HS Code: 030743
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/dragon-fruit-red-or-white.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/dragon-fruit.jpg" loading="lazy">
+              <div class="p-details">
+                Dragon Fruit Pitaya <br> HS Code: 08109092
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/durian.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/duriannew.jpeg" loading="lazy">
+              <div class="p-details">
+                Durian <br> HS Code: 081060
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/edamame.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/edamamenew.jpeg" loading="lazy">
+              <div class="p-details">
+                Edamame <br> HS Code: 071080
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/fish-maw-dried.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/fish-maw.webp" loading="lazy">
+              <div class="p-details">
+                Dried Fish Maw <br> HS Code: 030559
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/ginger-whole-and-powder.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/ginger.jpg" loading="lazy">
+              <div class="p-details">
+                Ginger <br> HS Code: 0910
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/golden-berry.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/golden-berry.jpeg" loading="lazy">
+              <div class="p-details">
+                Gooseberries <br> HS Code: 081120
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/guava.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/guavanew.jpeg" loading="lazy">
+              <div class="p-details">
+                Guavas <br> HS Code: 08045010
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/rosin-gum.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/gumrosin.jpeg" loading="lazy">
+              <div class="p-details">
+                Gum Pine Rosin <br>
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/jackfruit.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/jackfruit.jpg" loading="lazy">
+              <div class="p-details">
+                Jackfruit <br> HS Code: 08109050
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/kaong-palm-fruit.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/new-kaong.jpg" loading="lazy">
+              <div class="p-details">
+                Sugar Palm Fruit Kaong <br> HS Code: 0802Xd
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/kapok-filling.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/kapoknew.png" loading="lazy">
+              <div class="p-details">
+                Kapok Fiber <br> HS Code: 14049030
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/lava-stone-wall-cladding.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/lava-wall.jpg" loading="lazy">
+              <div class="p-details">
+                Lava Stone Wall Cladding <br>
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/lemongrass.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/lemongrass.jpg" loading="lazy">
+              <div class="p-details">
+                Lemongrass <br> HS Code: 1211XX
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/lemons.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/lemons.jpg" loading="lazy">
+              <div class="p-details">
+                Lemons <br> HS Code: 08055010
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/longan.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/longan.jpg" loading="lazy">
+              <div class="p-details">
+                Longans <br> HS Code: 08134010
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/mackerel.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/mackerelnew.jpg" loading="lazy">
+              <div class="p-details">
+                Mackerel <br> HS Code: 030354
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/mango.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/mangonew2.jpg" loading="lazy">
+              <div class="p-details">
+                Mangoes <br> HS Code: 080450
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/mangosteen.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/mangosteennew.jpg" loading="lazy">
+              <div class="p-details">
+                Mangosteen <br> HS Code: 08045030
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/merbau-hardwood-decking-flooring.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/merbaunew.jpeg" loading="lazy">
+              <div class="p-details">
+                Merbau Timber Wood <br>
+                <!-- HS Code: 08134010 -->
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/moringa.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/moringanew.jpeg" loading="lazy">
+              <div class="p-details">
+                Moringa <br> HS Code: 1211XX
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/mud-crab.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/mud-crab.png" loading="lazy">
+              <div class="p-details">
+                Mud Crabs <br> HS Code: 030614
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/mung-bean.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/mung-bean.jpg" loading="lazy">
+              <div class="p-details">
+                Mung Beans <br> HS Code: 071331
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/muriate-of-potash-mop.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/mopnew.jpg" loading="lazy">
+              <div class="p-details">
+                Muriate of Potash (MOP) <br> HS Code: 310420
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/mutton-frozen.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/mutton.jpg" loading="lazy">
+              <div class="p-details">
+                Mutton <br> HS Code: 0204
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/honey-acacia.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/honey2.webp" loading="lazy">
+              <div class="p-details">
+                Natural Honey <br> HS Code: 040900
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/palm-kernel-expeller.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/palm-kernel-expeller.jpeg" loading="lazy">
+              <div class="p-details">
+                Palm kernel expeller (PKE) <br> HS Code: 230660
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/paprika.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/paprikanew.jpeg" loading="lazy">
+              <div class="p-details">
+                Paprika <br> HS Code: 0904XX
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/passion-fruit.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/passion.jpg" loading="lazy">
+              <div class="p-details">
+                Passion Fruit <br> HS Code: 08109094
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/pebbles-stones.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/peb2.jpg" loading="lazy">
+              <div class="p-details">
+                Pebbles Stones<br> 
+                <!-- HS Code: 0904XX -->
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/pineapple.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/pineapple.jpg" loading="lazy">
+              <div class="p-details">
+                Pineapples <br> HS Code: 080430
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/plywood-and-film-faced-plywood.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/plywoodnew.jpeg" loading="lazy">
+              <div class="p-details">
+                Plywood <br> HS Code: 4412
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/pomelo.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/pomelo.jpg" loading="lazy">
+              <div class="p-details">
+                Pomelos <br> HS Code: 080540
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/coconut-oil-refined.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/rbdcoco.jpeg" loading="lazy">
+              <div class="p-details">
+                RBD Coconut Oil <br> HS Code: 151319
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/red-snapper-fish.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/snapper.jpeg" loading="lazy">
+              <div class="p-details">
+                Red Snapper Fish <br> HS Code: 0303Xa
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/shallots.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/shallots.jpg" loading="lazy">
+              <div class="p-details">
+                Shallots <br> HS Code: 070310
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/shrimp-frozen.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/prawn.jpeg" loading="lazy">
+              <div class="p-details">
+                Shrimp & Prawns <br> HS Code: 0306Xa
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/skipjack-tuna-cakalang.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/cakalang2.jpg" loading="lazy">
+              <div class="p-details">
+                Skipjack Tuna <br> HS Code: 030343
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/snake-fruit.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/salak.jpg" loading="lazy">
+              <div class="p-details">
+                Snake Fruit <br> 
+                <!-- HS Code: 080540 -->
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/soybean-meal.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/soymeal.jpg" loading="lazy">
+              <div class="p-details">
+                Soybean Meal Animal Feed <br> 
+                <!-- HS Code: 080540 -->
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/sugarcane.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/sucane.webp" loading="lazy">
+              <div class="p-details">
+                Sugar Cane <br> HS Code: 121293
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/sugarcane-molasses.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/sucanemol.jpeg" loading="lazy">
+              <div class="p-details">
+                Sugarcane Molasses <br> HS Code: 17011400
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/tapioca-starch-flour.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/tapioca3.png" loading="lazy">
+              <div class="p-details">
+                Tapioca Starch Flour <br> HS Code: 190300
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/tilapia-frozen.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/tilapia.jpeg" loading="lazy">
+              <div class="p-details">
+                Tilapia Fish <br> HS Code: 03043100
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/tuna-yellowfin-wholesale.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/tuna-steak.jpg" loading="lazy">
+              <div class="p-details">
+                Tuna Yellowfin <br> HS Code: 030342
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/turmeric-curcuma.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/curcumanew.jpeg" loading="lazy">
+              <div class="p-details">
+                Turmeric Curcuma <br> HS Code: 09103000
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/turpentine-oil.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/turpentine-new.jpg" loading="lazy">
+              <div class="p-details">
+                Turpentine Oil <br> HS Code: 38051000
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/products.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/vanilla.jpeg" loading="lazy">
+              <div class="p-details">
+                Vanilla <br> HS Code: 0905
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/virgin-coconut-oil-vco.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/vco.jpg" loading="lazy">
+              <div class="p-details">
+                Virgin Coconut Oil (VCO) <br> HS Code: 15131110
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/watermelon.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/watermelonnew.jpeg" loading="lazy">
+              <div class="p-details">
+                Watermelons <br> HS Code: 08071100
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/charcoal-briquettes-wood-and-coconut-shell.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/charcoal.jpeg" loading="lazy">
+              <div class="p-details">
+                Wood Charcoal <br> HS Code: 38021010 / 4402
+              </div>
+            </div>
+          </a>
+          <a href="https://indo5export.com/wholesale/wood-pellets.html">
+            <div class="product4">
+              <img src="https://indo5export.com/assets/img-product/wpnew.jpeg" loading="lazy">
+              <div class="p-details">
+                Wood Pellets <br> HS Code: 44013100
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
-    <br>
-    <span class="tengah">
-      <h4>Did not find what you're looking for? <a href="#">Contact Us Instead</a></h4>
-    </span>
 
     <section class="about section container" id="about">
       <div class="about__container grid">
@@ -126,17 +776,20 @@
         <div>
 
           <!-- <h2 class="bawah">About Indo5export.com</h2> <br> -->
-  
+
           <p class="about__description bawah">
-            
+
 
             Global trade has become an integral part of the modern business landscape <br><br>
-            
-            Companies around the world engage in importing and exporting goods to leverage competitive advantages <br><br>
-            
-            However, international trade can be complex and challenging, with various logistical hurdles and regulatory requirements <br><br>
-            
-            That's where Indo5export.com export services come into play, and Indo5export.com is here to lead the way<br><br>
+
+            Companies around the world engage in importing and exporting goods to leverage competitive advantages
+            <br><br>
+
+            However, international trade can be complex and challenging, with various logistical hurdles and regulatory
+            requirements <br><br>
+
+            That's where Indo5export.com export services come into play, and Indo5export.com is here to lead the
+            way<br><br>
 
             <button class="button button--flex" type="submit">
               <a href="./about.html" target="_blank">Read More >></a>
@@ -146,12 +799,24 @@
         </div>
 
         <div class="about__img">
-          <img
-            src="./assets/img/pngegg.png"
-            alt="" class="about__img">
+          <img src="./assets/img/pngegg.png" alt="" class="about__img">
         </div>
-      </div>    
+      </div>
     </section>
+
+    <section>
+      <div id="iframeContainer-2" class="kiri">
+        <iframe src="https://indo5export.com/wholesale/products.html" class="iframe"></iframe>
+      </div>
+    </section>
+
+
+    <br>
+
+    <span class="tengah">
+      <h4>Did not find what you're looking for? <a href="#">Contact Us Instead</a></h4>
+    </span>
+
 
     <!--==================== QUESTIONS ====================-->
     <section class="questions section" id="faqs">
@@ -245,7 +910,8 @@
 
             <div class="questions__content">
               <p class="questions__description">
-                We provide services ranging from door-to-door exports to container shipping to countries worldwide. This is to facilitate SMEs and industries in obtaining products from Indonesia
+                We provide services ranging from door-to-door exports to container shipping to countries worldwide. This
+                is to facilitate SMEs and industries in obtaining products from Indonesia
               </p>
             </div>
           </div>
@@ -331,14 +997,14 @@
             <i id="right" class="fa-solid fa-angle-right"></i>
           </div>
     </div> -->
-     
+
     <section id="inquiry">
       <br>
       <div id="iframeContainer" class="kiri">
         <iframe src="./contact-form/contact-form.html" class="iframe"></iframe>
       </div>
     </section>
- 
+
 
   </main>
 
