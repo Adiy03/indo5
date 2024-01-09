@@ -2120,9 +2120,9 @@ iframe {
   display: none;
 }
 
-.container-product2 form{
-  width: 100%;
-  border: 1px solid rgb(82, 74, 235);
+.product3 form{
+  width: 375px;
+  /* border: 1px solid rgb(82, 74, 235); */
   border-radius: 4px;
   display: flex;
   flex-direction: row;
@@ -2130,18 +2130,22 @@ iframe {
   justify-content: center;
 }
 
-.container-product2 form input{
-  border: none;
-  outline: none;
+.product3 form input{
+  /* border: none;
+  outline: none; */
   box-shadow: none;
   width: 100%;
   font-size: 16px;
-  font-weight: 600;
-  /* padding: 8px 10px; */
+  font-weight: 300;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container-product2 form i{
-  padding-left: 15px;
+.product3 form i{
+  margin-right: 10px;
+  font-size: 24px;
 }
 
 .product4{
