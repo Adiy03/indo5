@@ -236,13 +236,14 @@ the website, in dark theme
 
 .nav__logo {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -1px;
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
   transition: .3s;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .nav__logo-icon {

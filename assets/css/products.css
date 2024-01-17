@@ -99,6 +99,7 @@ img{
   position: relative;
   display: flex;
   text-align: center;
+  margin-top: 3rem;
 }
 
 
@@ -111,3 +112,11 @@ img{
   font-size:24px;
 }
 
+.head-indo{
+  font-size: 32px;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
