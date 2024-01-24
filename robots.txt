@@ -1,6 +1,2 @@
 User-agent: *
 Allow: /
-Disallow: /products/
-Disallow: /wholesale/banana-chips.html
-Disallow: /wholesale/king-fish-mackerel.html
-Disallow: /wholesale/coconut-semi-husk.html
